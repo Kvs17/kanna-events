@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@400;600&display=swap');
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  background-color: #f9f9f9;
+  color: #222;
+  font-size: 18px;   /* Increased base font size */
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 3.8rem;  /* Bigger main heading */
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 2.6rem;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 2.2rem;
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 1.8rem;
+}
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 1.4rem;
+}
+
+p, li {
+  font-size: 1.15rem; /* Increased text size for paragraphs and lists */
+}
+
+/* Navbar */
+.navbar {
+  backdrop-filter: blur(8px);
+  background: rgba(33, 33, 33, 0.95) !important;
+}
+.navbar-brand {
+  font-size: 2.2rem;  
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.navbar-nav .nav-link {
+  font-size: 1.2rem;  
+  font-weight: 600;
+  margin-left: 18px;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #00c2a8 !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('https://i.pinimg.com/564x/50/ba/7a/50ba7a687d5127999840dd18e0d95bb9.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 140px 0;
+  text-align: center;
+  color: #fff;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+.hero-section h1 {
+  font-size: 4.2rem;  /* Hero headline larger */
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.hero-section .btn {
+  margin: 10px;
+  padding: 14px 34px; /* slightly larger */
+  font-weight: 600;
+  font-size: 1.15rem;
+  border-radius: 30px;
+  transition: transform 0.3s ease;
+}
+.hero-section .btn:hover {
+  transform: translateY(-3px);
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+.card-title {
+  color: #009688;
+  font-weight: 700;
+  font-size: 1.4rem; /* bigger card titles */
+}
+.service-img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Gallery */
+#gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+#gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+.gallery-img-container {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-img-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+
+/* Contact Form */
+form .form-control {
+  border-radius: 10px;
+  padding: 14px; /* larger inputs */
+  font-size: 1.1rem;
+}
+form .btn-primary {
+  background: linear-gradient(45deg, #009688, #00bcd4);
+  border: none;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+form .btn-primary:hover {
+  background: linear-gradient(45deg, #00bcd4, #009688);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #bbb;
+  font-size: 1rem; /* slightly bigger */
+  padding: 40px 0;
+}
+footer a {
+  color: #bbb;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #00c2a8;
+}
+footer .social-icons i {
+  margin: 0 12px;
+  font-size: 1.6rem; /* increased */
+  transition: color 0.3s;
+}
+footer .social-icons i:hover {
+  color: #00c2a8;
+}
+
+
+
